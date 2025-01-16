@@ -1,0 +1,66 @@
+/* dont delete this file , its separet file */
+@font-face {
+   font-family: 'cairo';
+   src: url(../fonts/Cairo-Medium.ttf);
+}
+:root{
+   --main-color:burlywood;
+   --second-color:#f6f6f6;
+   --body-color:#fff;
+   --text-color:#322f2f;
+   --radius:8px;
+   --green:seagreen;
+}
+*{
+   padding: 0;
+   margin: 0;
+   font-family: 'cairo';
+}
+body{
+   min-height: 100vh;
+}
+.error-main{
+   min-height: 100vh;
+   min-width: 100vw;
+   background-color: #ff000072;
+   position: relative;
+}
+
+.error-main .container{
+   position: absolute;
+   transform: translate(-50%, -50%);
+   left: 50%;
+   top: 50%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 15px;
+   height: 80%;
+   width: 80%;
+   border-radius: var(--radius);
+   background-color: var(--text-color);
+}
+.error-main .container i{
+   color: #ff0000d3;
+   background-color: #e69a9a52;
+   padding: 25px;
+   font-size: 2em;
+   border-radius: 40px;
+}
+.error-main .container p{
+   color: #fff;
+   max-width: 80%;
+   margin: 50px auto;
+}
+.error-main .container span{
+   color: #ada6a67c;
+}
+.error-main .container button{
+   padding: 5px 8px;
+   border-radius: var(--radius);
+   background-color: var(--green);
+   border: none;
+   color: #fff;
+   cursor: pointer;
+}
